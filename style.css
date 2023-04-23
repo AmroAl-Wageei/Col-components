@@ -25,16 +25,16 @@ body {
   font-family: "Lexend Deca", sans-serif;
 }
 
-.container {
+main {
   width: 100%;
 }
 
-.main {
+.container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  width: calc(100% - 40%);
+  width: calc(100% - 50%);
   /* background-color: blue; */
-  margin: 200px auto;
+  margin: 100px auto;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -42,14 +42,14 @@ body {
   -o-border-radius: 10px;
 }
 
-.main .box:nth-child(2) {
+.container .box:nth-child(2) {
   background-color: var(--dark-cyan-color);
 }
-.main .box:last-child {
+.container .box:last-child {
   background-color: var(--Very-dark-cyan-color);
 }
 
-.main .box {
+.container .box {
   background-color: var(--Orange-color);
   padding: 20px;
   width: 100%;
@@ -59,35 +59,35 @@ body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.main .box .info {
+.container .box .info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 300px;
 }
-.main .box .info img {
+.container .box .info img {
   width: 70px;
 }
-.main .box .info h1 {
+.container .box .info h1 {
   color: white;
   font-size: 32px;
   text-transform: uppercase;
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
 }
-.main .box .info p {
+.container .box .info p {
   color: rgb(228, 228, 228);
   font-size: 15px;
   text-transform: capitalize;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
 }
-.main .box .btn {
+.container .box .btn {
   display: flex;
   margin-top: 30px;
   margin-bottom: 20px;
 }
-.main .box .btn button {
+.container .box .btn button {
   padding: 15px;
   border: none;
   outline: none;
