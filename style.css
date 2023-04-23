@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --Orange-color: hsl(31, 77%, 52%);
+  --dark-cyan-color: hsl(184, 100%, 22%);
+  --Very-dark-cyan-color: hsl(179, 100%, 13%);
+
+  --body-color: white;
+  --Tran-paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --light-color: hsl(0, 0%, 95%);
+
+  --padding: 10px;
+  --margin: 10px;
+}
+
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  width: calc(100% - 40%);
+  /* background-color: blue; */
+  margin: 200px auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.main .box:nth-child(2) {
+  background-color: var(--dark-cyan-color);
+}
+.main .box:last-child {
+  background-color: var(--Very-dark-cyan-color);
+}
+
+.main .box {
+  background-color: var(--Orange-color);
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.main .box .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 300px;
+}
+.main .box .info img {
+  width: 70px;
+}
+.main .box .info h1 {
+  color: white;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+.main .box .info p {
+  color: rgb(228, 228, 228);
+  font-size: 15px;
+  text-transform: capitalize;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.main .box .btn {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.main .box .btn button {
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  color: var(--Orange-color);
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+}
